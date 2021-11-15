@@ -1,4 +1,11 @@
-.header {
+.container {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.title {
   text-align: center;
-  margin: 2rem 0;
 }

@@ -4,8 +4,10 @@ export default function GalleryItem({ itemData }) {
   return (
     <div className={styles.container}>
       <img className={styles.image} src={itemData.src} alt="" />
-      <h2>Title: {itemData.title}</h2>
-      <p>Published by: {itemData.info}</p>
+      <div className={styles.infoContainer}>
+        <div className={styles.title}>Title: {itemData.title}</div>
+        <div className={styles.publisher}>Published by: {itemData.info}</div>
+      </div>
     </div>
   );
 }

@@ -1,10 +1,27 @@
 .container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 60px;
-  padding: 10px;
+  box-shadow: 5px 5px 15px rgba(161, 161, 161, 0.109);
 }
 
 .image {
   width: 100%;
   position: relative;
   display: block;
+}
+
+.infoContainer {
+  padding: 15px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.publisher {
+  font-size: 1.1em;
 }

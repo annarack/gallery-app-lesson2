@@ -6,7 +6,7 @@ import { data } from "../../galleryEntries.js";
 export default function App() {
   return (
     <div className={styles.app}>
-      <Header />
+      <Header title="Gallery" />
       {data.map((element) => (
         <GalleryItem key={element.title} itemData={element} />
       ))}
