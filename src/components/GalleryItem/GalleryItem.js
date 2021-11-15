@@ -1,13 +1,15 @@
 import styles from "./GalleryItem.module.css";
+import Image from "./Image.js";
+import Quote from "./Quote.js";
 
 export default function GalleryItem({ itemData }) {
   return (
     <div className={styles.container}>
-      <img className={styles.image} src={itemData.src} alt="" />
-      <div className={styles.infoContainer}>
-        <div className={styles.title}>Title: {itemData.title}</div>
-        <div className={styles.publisher}>Published by: {itemData.info}</div>
-      </div>
+      {itemData.type === "img" ? (
+        <Image itemData={itemData} />
+      ) : (
+        <Quote itemData={itemData}></Quote>
+      )}
     </div>
   );
 }
